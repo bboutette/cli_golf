@@ -1,0 +1,123 @@
+irectory
+bb ~
+$ ~/code/wdi/homework/kitchen/cans.txt
+-bash: /Users/bb/code/wdi/homework/kitchen/cans.txt: Permission denied
+bb ~
+$ rm ~/code/wdi/homework/kitchen/cans.txt 
+removed '/Users/bb/code/wdi/homework/kitchen/cans.txt'
+bb ~
+$ mv ~/code/wdi/homework/kitchen/fridge/trashcan ~/code/wdi/homework/kitchen/trashcan
+'/Users/bb/code/wdi/homework/kitchen/fridge/trashcan' -> '/Users/bb/code/wdi/homework/kitchen/trashcan'
+bb ~
+$ mv ~/code/wdi/homework/kitchen/trashcan/sink/ ~/code/wdi/homework/kitchen/sink'/Users/bb/code/wdi/homework/kitchen/trashcan/sink/' -> '/Users/bb/code/wdi/homework/kitchen/sink'
+bb ~
+$ mv ~/code/wdi/homework/kitchen/fridge/pantry/crisper-drawer ~/code/wdi/homework/kitchen/fridge/freezer/crisper-drawer
+gmv: cannot stat '/Users/bb/code/wdi/homework/kitchen/fridge/pantry/crisper-drawer': No such file or directory
+bb ~
+$ mv ~/code/wdi/homework/kitchen/pantry/crisper-drawer ~/code/wdi/homework/kitchen/fridge/freezer/crisper-drawer
+'/Users/bb/code/wdi/homework/kitchen/pantry/crisper-drawer' -> '/Users/bb/code/wdi/homework/kitchen/fridge/freezer/crisper-drawer'
+bb ~
+$ cd ~/code/wdi/homework/kitchen/fridge/freezer/crisper-drawer
+bb ~/code/wdi/homework/kitchen/fridge/freezer/crisper-drawer
+$ touch apples.txt
+bb ~/code/wdi/homework/kitchen/fridge/freezer/crisper-drawer
+$ rm ~/code/wdi/homework/kitchen/fridge/freezer/couch.txt
+removed '/Users/bb/code/wdi/homework/kitchen/fridge/freezer/couch.txt'
+bb ~/code/wdi/homework/kitchen/fridge/freezer/crisper-drawer
+$ rm ~/code/wdi/homework/kitchen/fridge/delete-me.txt
+grm: cannot remove '/Users/bb/code/wdi/homework/kitchen/fridge/delete-me.txt': No such file or directory
+bb ~/code/wdi/homework/kitchen/fridge/freezer/crisper-drawer
+$ mkdir ~/code/wdi/homework/kitchen/sink/drying-rack
+gmkdir: created directory '/Users/bb/code/wdi/homework/kitchen/sink/drying-rack'
+bb ~/code/wdi/homework/kitchen/fridge/freezer/crisper-drawer
+$ mv ~/code/wdi/homework/kitchen/sink/clean-dishes.txt ~/code/wdi/homework/kitchen/sink/drying-rack/clean-dishes.txt
+'/Users/bb/code/wdi/homework/kitchen/sink/clean-dishes.txt' -> '/Users/bb/code/wdi/homework/kitchen/sink/drying-rack/clean-dishes.txt'
+bb ~/code/wdi/homework/kitchen/fridge/freezer/crisper-drawer
+$ tree
+-bash: tree: command not found
+bb ~/code/wdi/homework/kitchen/fridge/freezer/crisper-drawer
+$ brew install tree
+Updating Homebrew...
+==> Auto-updated Homebrew!
+Updated 2 taps (homebrew/core, homebrew/dupes).
+==> New Formulae
+buildifier                 monitoring-plugins         pqiv
+==> Updated Formulae
+aws-sdk-cpp                              miller
+awscli                                   plantuml
+cassandra                                selenium-server-standalone
+conan                                    vim
+concurrencykit                           vnu
+erlang                                   yarn
+homebrew/dupes/screen                    youtube-dl
+
+==> Downloading https://homebrew.bintray.com/bottles/tree-1.7.0.sierra.bottle.1.
+######################################################################## 100.0%
+==> Pouring tree-1.7.0.sierra.bottle.1.tar.gz
+🍺  /usr/local/Cellar/tree/1.7.0: 7 files, 113.3K
+bb ~/code/wdi/homework/kitchen/fridge/freezer/crisper-drawer
+$ ~/code/wdi/homework/kitchen/
+-bash: /Users/bb/code/wdi/homework/kitchen/: is a directory
+bb ~/code/wdi/homework/kitchen/fridge/freezer/crisper-drawer
+$ cd ~/code/wdi/homework/kitchen/
+bb ~/code/wdi/homework/kitchen
+$ tree
+.
+├── fridge
+│   ├── diapers.txt
+│   ├── freezer
+│   │   ├── crisper-drawer
+│   │   │   ├── apples.txt
+│   │   │   └── lettuce.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── delete-me.txt
+│   ├── dirty-dishes.txt
+│   └── drying-rack
+│       └── clean-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+7 directories, 14 files
+bb ~/code/wdi/homework/kitchen
+$ rm ~/code/wdi/homework/kitchen/diapers.txt
+grm: cannot remove '/Users/bb/code/wdi/homework/kitchen/diapers.txt': No such file or directory
+bb ~/code/wdi/homework/kitchen
+$ rm ~/code/wdi/homework/kitchen/fridge/diapers.txt 
+removed '/Users/bb/code/wdi/homework/kitchen/fridge/diapers.txt'
+bb ~/code/wdi/homework/kitchen
+$ rm ~/code/wdi/homework/kitchen/sink/delete-me.txt
+removed '/Users/bb/code/wdi/homework/kitchen/sink/delete-me.txt'
+bb ~/code/wdi/homework/kitchen
+$ tree
+.
+├── fridge
+│   ├── freezer
+│   │   ├── crisper-drawer
+│   │   │   ├── apples.txt
+│   │   │   └── lettuce.txt
+│   │   ├── frozenpeas.txt
+│   │   └── icecream.txt
+│   └── milk.txt
+├── pantry
+│   ├── cans.txt
+│   └── cereal.txt
+├── sink
+│   ├── dirty-dishes.txt
+│   └── drying-rack
+│       └── clean-dishes.txt
+└── trashcan
+    ├── banana-peels.txt
+    ├── chicken-bones.txt
+    └── egg-shells.txt
+
+7 directories, 12 files
+bb ~/code/wdi/homework/kitchen
+$ 
